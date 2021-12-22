@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="260dp"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="10dp"
+        android:elevation="10dp">
+
+        <ImageView
+            android:id="@+id/imageViewPiece"
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/broga"/>
+
+        <TextView
+            android:id="@+id/textViewPieceTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bukit Broga Hill"
+            android:fontFamily="@font/open_sans_extrabold"
+            android:textColor="@color/black"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="160dp"/>
+
+        <TextView
+            android:id="@+id/textViewPieceRegion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Semenyih, Selangor, Malaysia"
+            android:textSize="12sp"
+            android:fontFamily="@font/open_sans_light"
+            android:textColor="@color/black"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="185dp"/>
+
+        <TextView
+            android:id="@+id/textViewPieceDifficulty"
+            android:layout_width="85dp"
+            android:layout_height="18dp"
+            android:text="moderate"
+            android:fontFamily="@font/open_sans_light"
+            android:textColor="@color/whitewhite"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:layout_marginLeft="15dp"
+            android:paddingHorizontal="15dp"
+            android:background="@drawable/difficulty_bg2"
+            android:layout_marginTop="210dp"/>
+
+        <RatingBar
+            android:id="@+id/pieceRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="47dp"
+            android:layout_marginTop="195dp"
+            android:layout_marginLeft="80dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:stepSize="1"
+            android:rating="1.0"
+            android:theme="@style/RatingBar"
+            android:scaleX="0.5"
+            android:scaleY="0.5"/>
+
+        <TextView
+            android:id="@+id/textViewReviewCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(0)"
+            android:textSize="13sp"
+            android:layout_marginTop="210dp"
+            android:layout_marginLeft="270dp"/>
+
+        <TextView
+            android:id="@+id/textViewDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Length: 3.7 km"
+            android:textSize="13sp"
+            android:layout_marginTop="235dp"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/textViewEstimateTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Est. 1h 16m"
+            android:textSize="13sp"
+            android:layout_marginTop="235dp"
+            android:layout_marginLeft="140dp"/>
+
+        <ImageButton
+            android:id="@+id/btnSave"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="#00FFFFFF"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="305dp"
+            android:layout_marginTop="105dp"
+            android:src="@drawable/ic_save"/>
+        </androidx.cardview.widget.CardView>
+</RelativeLayout>

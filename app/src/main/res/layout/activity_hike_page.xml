@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HikePageActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layoutHeader"
+                android:layout_width="match_parent"
+                android:layout_height="255dp"
+                android:background="@drawable/broga">
+
+                <ImageView
+                    android:id="@+id/btnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_back"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="255dp"
+                    android:src="@drawable/shadow2"/>
+
+                <TextView
+                    android:id="@+id/textViewTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bukit Broga Hill"
+                    android:fontFamily="@font/open_sans_extrabold_italic"
+                    android:textColor="@color/whitewhite"
+                    android:textSize="18sp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <TextView
+                    android:id="@+id/textViewDifficulty"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:text="moderate"
+                    android:fontFamily="@font/open_sans_light"
+                    android:textColor="@color/whitewhite"
+                    android:textAlignment="center"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="20dp"
+                    android:paddingHorizontal="15dp"
+                    android:background="@drawable/difficulty_bg2"
+                    android:layout_marginTop="130dp"/>
+
+                <RatingBar
+                    android:id="@+id/ratingBarStars"
+                    android:layout_width="wrap_content"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="115dp"
+                    android:layout_marginLeft="80dp"
+                    android:numStars="5"
+                    android:stepSize="1"
+                    android:rating="1.0"
+                    android:theme="@style/RatingBar1"
+                    android:isIndicator="true"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5" />
+
+                <TextView
+                    android:id="@+id/textViewReviewCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(0)"
+                    android:textSize="14sp"
+                    android:textColor="@color/whitewhite"
+                    android:layout_marginTop="128dp"
+                    android:layout_marginLeft="270dp"/>
+
+                <TextView
+                    android:id="@+id/textViewRegion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Semenyih, Selangor, Malaysia"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/open_sans_light"
+                    android:textColor="@color/whitewhite"
+                    android:paddingLeft="20dp"
+                    android:layout_marginTop="160dp"/>
+
+                <ImageButton
+                    android:id="@+id/btnSave"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="#00FFFFFF"
+                    android:scaleType="fitXY"
+                    android:layout_marginLeft="360dp"
+                    android:layout_marginTop="150dp"
+                    android:src="@drawable/ic_save"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="210dp"
+                    android:background="#3F2A8C"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="190dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btnMaps"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="70dp"
+                        app:cardBackgroundColor="#f2edfc"
+                        app:cardCornerRadius="20dp">
+                        <ImageView
+                            android:layout_marginTop="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/ic_map"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btnImages"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="70dp"
+                        app:cardBackgroundColor="#f2edfc"
+                        app:cardCornerRadius="20dp">
+                        <ImageView
+                            android:layout_marginTop="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/ic_image2"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btnReviews"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="70dp"
+                        app:cardBackgroundColor="#f2edfc"
+                        app:cardCornerRadius="20dp">
+                        <ImageView
+                            android:layout_marginTop="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/ic_rate"/>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Maps"
+                    android:textColor="@color/whitewhite"
+                    android:fontFamily="@font/open_sans_light"
+                    android:textSize="12sp"
+                    android:layout_marginTop="230dp"
+                    android:layout_marginLeft="75dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Medias"
+                    android:textColor="@color/whitewhite"
+                    android:fontFamily="@font/open_sans_light"
+                    android:textSize="12sp"
+                    android:layout_marginTop="230dp"
+                    android:layout_marginLeft="180dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reviews"
+                    android:textColor="@color/whitewhite"
+                    android:fontFamily="@font/open_sans_light"
+                    android:textSize="12sp"
+                    android:layout_marginTop="230dp"
+                    android:layout_marginLeft="287dp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textViewDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingHorizontal="15dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/open_sans_light"
+                android:text="Bukit Broga is a 3.2 kilometer moderately trafficked out and back trail located near Semenyih, Selangor, Malaysia that features beautiful wild flowers and is rated as moderate. The trail is primarily used for hiking, walking, and nature trips."/>
+
+            <LinearLayout
+                android:layout_width="370dp"
+                android:layout_height="2dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:background="#D3D3D3"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Length"
+                        android:fontFamily="@font/open_sans_light"
+                        android:textSize="12sp"
+                        android:textColor="#717171"
+                        android:layout_marginLeft="20dp"/>
+
+                    <TextView
+                        android:id="@+id/textViewLength"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2.3 km"
+                        android:fontFamily="@font/open_sans_extrabold"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Elevation Gain"
+                        android:fontFamily="@font/open_sans_light"
+                        android:textSize="12sp"
+                        android:textColor="#717171"
+                        android:layout_marginLeft="20dp"/>
+
+                    <TextView
+                        android:id="@+id/textViewElevationGain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="400 m"
+                        android:fontFamily="@font/open_sans_extrabold"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Route Type"
+                        android:fontFamily="@font/open_sans_light"
+                        android:textSize="12sp"
+                        android:textColor="#717171"
+                        android:layout_marginLeft="20dp"/>
+
+                    <TextView
+                        android:id="@+id/textViewRouteType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Loop"
+                        android:fontFamily="@font/open_sans_extrabold"
+                        android:textSize="12sp"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="20dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageViewMap"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/brogamap"
+                android:scaleType="fitXY"/>
+
+            <Button
+                android:id="@+id/btnViewMap"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="55dp"
+                android:text="View Map"
+                android:textColor="#652AD3"
+                android:background="@drawable/gradient_background"
+                android:layout_marginTop="15dp"/>
+
+            <LinearLayout
+                android:layout_width="370dp"
+                android:layout_height="2dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:background="#D3D3D3"/>
+
+            <TextView
+                android:id="@+id/textViewImagesAnchor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medias"
+                android:fontFamily="@font/open_sans_extrabold"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageViewPicture1"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/brogapic1"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/imageViewPicture2"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/brogapic2"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <ImageView
+                        android:id="@+id/imageViewPicture3"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/brogapic3"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"/>
+                </LinearLayout>
+
+                <VideoView
+                    android:id="@+id/videoView"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="40dp"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textViewReviewsAnchor"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Reviews"
+                android:fontFamily="@font/open_sans_extrabold"
+                android:textSize="15sp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:background="#D3D3D3"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textViewRatingInNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.0"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/open_sans_extrabold"
+                    android:textSize="50sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <RatingBar
+                    android:id="@+id/ratingBarStarsAtReview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"
+                    android:numStars="5"
+                    android:rating="1.0"
+                    android:stepSize="1"
+                    android:isIndicator="true"
+                    android:theme="@style/RatingBar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editTextReview"
+                        android:layout_width="300sp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/textcolumn2"
+                        android:ems="8"
+                        android:fontFamily="@font/open_sans_bold"
+                        android:hint="Write a Review..."
+                        android:layout_marginLeft="15dp"
+                        android:padding="8sp"
+                        android:textColor="#000000"
+                        android:textColorHint="#c4c4c4"
+                        android:gravity="start|top"
+                        android:inputType="textMultiLine"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/btnSubmitReview"
+                        android:layout_width="70dp"
+                        android:layout_height="100dp"
+                        android:text="Submit"
+                        android:textColor="#FFFFFF"
+                        android:background="@drawable/btn_bg_4"
+                        android:layout_marginLeft="325dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rate It:"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/open_sans_extrabold"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="110dp"
+                        android:layout_marginLeft="20dp"/>
+
+                    <RatingBar
+                        android:id="@+id/ratingBarReview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="95dp"
+                        android:layout_marginLeft="30dp"
+                        android:numStars="5"
+                        android:stepSize="1"
+                        android:rating="0.0"
+                        android:theme="@style/RatingBar"
+                        android:scaleX="0.6"
+                        android:scaleY="0.6" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="370dp"
+                android:layout_height="2dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:background="#D3D3D3"/>
+
+            <LinearLayout
+                android:id="@+id/layoutReviewRows"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

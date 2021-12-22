@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:elevation="20dp"
+        android:background="#3F2A8C">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Let's hike on your favourite \nagain"
+            android:fontFamily="@font/open_sans_extrabold"
+            android:textSize="22sp"
+            android:paddingTop="30dp"
+            android:textColor="@color/whitewhite"
+            android:paddingLeft="20dp"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/layoutFavourite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Favourite Hikes"
+                    android:fontFamily="@font/open_sans_extrabold"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:layout_marginTop="150dp"/>
+
+                <TextView
+                    android:id="@+id/textViewNoFavourite"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:text="No Favourite"
+                    android:textSize="20sp"
+                    android:textColor="#A3A3A3"
+                    android:textAlignment="center"
+                    android:paddingRight="20dp"
+                    android:paddingTop="50dp"/>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

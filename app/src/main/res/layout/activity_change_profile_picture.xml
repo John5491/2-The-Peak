@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChangeProfilePicture">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="265dp"
+        android:background="#3F2A8C">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_back" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_centerHorizontal="true"
+            android:elevation="10dp"
+            app:cardCornerRadius="55dp">
+            <ImageView
+                android:id="@+id/cardimageViewPiece"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/profile" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="John's"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:fontFamily="@font/open_sans_extrabold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="190dp"
+            android:textColor="@color/whitewhite"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="settings"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:fontFamily="@font/open_sans_extrabold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="220dp"
+            android:textColor="#B3B3B3"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile Picture Settings"
+        android:fontFamily="@font/open_sans_bold"
+        android:layout_marginLeft="30dp"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btnLaunchCamera"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Take From Camera"
+        android:textColor="#652AD3"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/gradient_background"/>
+
+    <Button
+        android:id="@+id/btnResetDefault"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Reset to Default"
+        android:textColor="#652AD3"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/gradient_background"/>
+
+
+</LinearLayout>

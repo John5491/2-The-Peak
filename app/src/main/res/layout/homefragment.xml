@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:elevation="20dp"
+        android:background="#3F2A8C">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grab your stuff and let's go"
+            android:fontFamily="@font/open_sans_extrabold"
+            android:textSize="22sp"
+            android:paddingTop="30dp"
+            android:textColor="@color/whitewhite"
+            android:paddingLeft="20dp"/>
+
+
+        <EditText
+            android:id="@+id/editTextSearch"
+            android:layout_width="270sp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/textcolumn2"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="12dp"
+            android:ems="8"
+            android:fontFamily="@font/open_sans_bold"
+            android:hint="Enter a park, mountain or hill"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="80dp"
+            android:inputType="textPersonName"
+            android:padding="8sp"
+            android:textColor="#000000"
+            android:textColorHint="#c4c4c4"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Search"
+            android:textColor="@color/whitewhite"
+            android:background="@drawable/gradient_background"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="20dp"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feature Hikes"
+                android:fontFamily="@font/open_sans_extrabold"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="160dp"/>
+
+            <RelativeLayout
+                android:id="@+id/layoutFeature"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:paddingLeft="20dp">
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All Hikes"
+                android:fontFamily="@font/open_sans_extrabold"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewAllHikes"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_height="300dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
